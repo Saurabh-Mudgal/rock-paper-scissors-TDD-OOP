@@ -7,6 +7,8 @@
 const gameLogic = new GameLogic("rock");
 const randomChoiceSpy = jest.spyOn(gameLogic, "randomChoice");
 const updateScoreSpy = jest.spyOn(gameLogic, "updateScore");
+const addResultDivSpy = jest.spyOn(gameLogic, "addResultDiv");
+
 
 
 
@@ -144,6 +146,30 @@ describe('class GameLogic has methods that execute as intended', () => {
             }
 
 
+        })
+    })
+
+    describe('.addResultDiv method exists and executes as intended', () => {
+        
+        describe('.addResultDiv smoke tests', () => {
+
+            it('should exist', () => {
+                expect(gameLogic.addResultDiv).toBeDefined();
+            })
+    
+            it('should be a function type', () => {
+                expect(typeof gameLogic.addResultDiv).toBe("function");
+            })
+        })
+        
+        it('should add the div for player selections in the round without errors', () => {
+            
+            const result = gameLogic.addResultDiv(gameLogic.choices[0], true, true);
+
+            expect(result).toBeUndefined;
+            expect(addResultDivSpy).toHaveBeenCalledTimes(1);
+
+            addResultDivSpy.mockClear();
         })
     })
 })

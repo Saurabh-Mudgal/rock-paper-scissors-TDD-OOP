@@ -23,6 +23,20 @@ export default class GameLogic {
         // If extending to huge relations (eg pokemon, chess), easily isolate to SQL database and write queries to pull data directly. 
     }
 
+    addResultDiv(selection, winner, playerMode){
+        const div = document.createElement("div");
+        div.classList.add("selection");
+        div.classList.add("recent");
+        if (winner) {div.classList.add("winner")}
+        div.innerText = selection.emoji;
+
+        const finalColumn = (playerMode) ? document.querySelectorAll("[data-final-column]") : document.querySelectorAll("[data-final2-column]")
+
+        finalColumn.forEach(final => {
+            final.after(div);
+        })
+    }
+
     updateScore(p1Wins, p2Wins, playerMode){
         const p1Score = (playerMode) ? document.querySelector("[data-your-score]") : document.querySelector("[data-player1-score]")
         const p2Score = (playerMode) ? document.querySelector("[data-computer-score]") : document.querySelector("[data-player2-score]")
