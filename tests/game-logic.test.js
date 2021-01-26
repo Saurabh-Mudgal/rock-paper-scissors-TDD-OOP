@@ -11,7 +11,6 @@ const addResultDivSpy = jest.spyOn(gameLogic, "addResultDiv");
 
 
 
-
  describe('class GameLogic has correct rock, paper, scissors logic', () => {
     
     describe('GameLogic smoke tests', () => {
@@ -149,7 +148,7 @@ describe('class GameLogic has methods that execute as intended', () => {
         })
     })
 
-    describe('.addResultDiv method exists and executes as intended', () => {
+        describe('.addResultDiv method exists and executes as intended', () => {
         
         describe('.addResultDiv smoke tests', () => {
 
@@ -164,12 +163,18 @@ describe('class GameLogic has methods that execute as intended', () => {
         
         it('should add the div for player selections in the round without errors', () => {
             
-            const result = gameLogic.addResultDiv(gameLogic.choices[0], true, true);
+            for (let i = 0; i<3; i++) {
+                for (let j = 0; j<2; j++) {
+                    for (let k = 0; k<2; k++) {
+                        const result = gameLogic.addResultDiv((gameLogic.choices[i]), (j ? true : false), (k ? true : false));
 
-            expect(result).toBeUndefined;
-            expect(addResultDivSpy).toHaveBeenCalledTimes(1);
-
-            addResultDivSpy.mockClear();
+                        expect(result).toBeUndefined;
+                        expect(addResultDivSpy).toHaveBeenCalledTimes(1);
+            
+                        addResultDivSpy.mockClear();
+                    }
+                }
+            }
         })
     })
 })
