@@ -22,4 +22,9 @@ export default class GameLogic {
         // RockPaperScissorsLizardSpock: Add Lizard, Spock objects and modify "beats" of previous choices accordingly.
         // If extending to huge relations (eg pokemon, chess), easily isolate to SQL database and write queries to pull data directly. 
     }
+
+    randomChoice() {
+        const n = Math.floor(Math.random()*((this.choices).length));
+        return this.choices[n];
+    }
 }

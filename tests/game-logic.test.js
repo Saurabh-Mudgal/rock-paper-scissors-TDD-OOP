@@ -5,6 +5,8 @@
  import GameLogic from '../test-site/scripts/game-logic.js';
 
 const gameLogic = new GameLogic("rock");
+const randomChoiceSpy = jest.spyOn(gameLogic, "randomChoice");
+
 
  describe('class GameLogic has correct rock, paper, scissors logic', () => {
     
@@ -82,5 +84,34 @@ const gameLogic = new GameLogic("rock");
             })
         })
 
+    })
+})
+
+describe('class GameLogic has methods that execute as intended', () => {  
+    describe('.randomChoice method exists and executes as intended', () => {
+
+        describe('.randomChoice smoke tests', () => {
+            it('should exist', () => {
+                expect(gameLogic.randomChoice).toBeDefined();
+            })
+    
+            it('should be a function type', () => {
+                expect(typeof gameLogic.randomChoice).toBe("function");
+            })
+
+            it('should have a return type of object', () => {
+                expect(typeof gameLogic.randomChoice()).toBe("object");
+            })
+        })
+
+        describe('.randomChoice executes as intended', () => {
+
+            const result = gameLogic.randomChoice();
+
+            expect(gameLogic.choices).toContainEqual(result);
+            expect(randomChoiceSpy).toHaveBeenCalledTimes(1);
+
+            randomChoiceSpy.mockClear();
+        })
     })
 })
