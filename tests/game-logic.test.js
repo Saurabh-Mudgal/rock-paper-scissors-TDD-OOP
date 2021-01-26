@@ -2,7 +2,9 @@
  * @jest-environment jsdom
  */
 
- import GameLogic from '../test-site/scripts/gameLogic.js';
+ import GameLogic from '../test-site/scripts/game-logic.js';
+
+const gameLogic = new GameLogic("rock");
 
  describe('class GameLogic has correct rock, paper, scissors logic', () => {
     
