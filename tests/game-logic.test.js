@@ -6,6 +6,8 @@
 
 const gameLogic = new GameLogic("rock");
 const randomChoiceSpy = jest.spyOn(gameLogic, "randomChoice");
+const updateScoreSpy = jest.spyOn(gameLogic, "updateScore");
+
 
 
  describe('class GameLogic has correct rock, paper, scissors logic', () => {
@@ -112,6 +114,36 @@ describe('class GameLogic has methods that execute as intended', () => {
             expect(randomChoiceSpy).toHaveBeenCalledTimes(1);
 
             randomChoiceSpy.mockClear();
+        })
+    })
+
+    describe('.updateScore method exists and executes as intended', () => {
+        describe('.updateScore smoke tests', () => {
+
+            it('should exist', () => {
+                expect(gameLogic.updateScore).toBeDefined();
+            })
+    
+            it('should be a function type', () => {
+                expect(typeof gameLogic.updateScore).toBe("function");
+            })
+        })
+
+        it('should update the score for both players without errors', () => {
+
+            for(let i= 0; i< 2; i++) {
+                for(let j= 0; j< 2; j++) {
+
+                    const result = updateScoreSpy.mockReturnThis(undefined);
+
+                    expect(result).toBeUndefined;
+                    expect(updateScoreSpy).toHaveBeenCalledTimes(0);
+        
+                    updateScoreSpy.mockClear();
+                }
+            }
+
+
         })
     })
 })
