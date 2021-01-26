@@ -1,0 +1,20 @@
+{
+  "name": "mavericks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --watchAll --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.5",
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.5"
+  }
+}

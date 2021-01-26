@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rock, Paper, Scissors</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./scripts/game-logic.js" type="module" defer></script>
+        <script src="./scripts/main.js" type="module" defer></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!--  -->
+        <!-- MODE SELECTION SCREEN -->
+
+        <div class="navigation">
+            <button class="gameMode" data-gamemode="player">Player Vs Computer</button>
+            <button class="gameMode" data-gamemode="computer">Computer Vs Computer</button>
+        </div>
+
+        <!--  -->
+        <!-- PLAYER VS COMPUTER -->
+
+        <div id="player" class="turn">
+            Turns played:<span class="turn-record record" data-turn>0</span>
+        </div>
+
+        <div class="selection-options">
+            <button class="selection-button" data-selection="rock">👊</button>
+            <button class="selection-button" data-selection="paper">✋</button>
+            <button class="selection-button" data-selection="scissors">✌️</button>
+        </div>
+        
+        <div class="results">
+            <div>
+                You
+                <span class="data-your-score record" data-your-score>0</span>
+            </div>
+            <div data-final-column>
+                Computer
+                <span class="data-computer-score record" data-computer-score>0</span>
+            </div>
+            <!-- <div class="selection winner">👊</div>
+            <div class="selection">✌️</div> -->
+        </div>
+
+        <div class="dashboard player">
+            <div class="instructions" id="player-inst">Please select your choice by clicking the ROCK, PAPER, SCISSORS emoji above :)</div>
+            <button class="exit-button player">Exit<br>Change Game Mode</button>
+        </div>
+
+        <!--  -->
+        <!-- COMPUTER VS COMPUTER -->
+
+        <div id="computer" class="turn">
+            Turns played:<span class="turn-record record" data-turn-computer>0</span>
+        </div>
+
+        <div class="selection-options">
+            <button class="selection-button" data-play="play">▶️</button>
+        </div>
+
+        <div class="results">
+            <div>
+                Player 1
+                <span class="data-your-score record" data-player1-score>0</span>
+            </div>
+            <div data-final2-column>
+                Player 2
+                <span class="data-computer-score record" data-player2-score>0</span>
+            </div>
+            <!-- <div class="selection winner">👊</div>
+            <div class="selection">✌️</div> -->
+        </div>
+
+        <div class="dashboard">
+            <div class="instructions" id="comp-inst">Simulate a computer round by clicking the PLAY emoji above :)</div>
+            <button class="exit-button computer">Exit<br>Change Game Mode</button>
+        </div>
+        
+
+    </body>
+</html>

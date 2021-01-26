@@ -1,0 +1,129 @@
+:root {
+    --background-color: #666;
+    --accent-color: #333;
+    --highlight-color: rgb(95, 158, 160);
+    /* --highlight-color: #C83CA6; */
+    --special-text: #F5F5F5;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* MODE NAVIGATION */
+
+.navigation {
+    margin-bottom: 1rem;
+    background-image: url(../images/rock-papaer-scissors.jpg);
+    background-repeat: round;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gameMode {
+    background: none;
+    border: none;
+    color: var(--special-text);
+    font-size: 1.5vw;
+    text-decoration: none;
+    
+    padding: 0.75vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    text-align: center;
+}
+
+/* MAIN GAME CONSOLE */
+
+.turn{
+    display: flex;
+    justify-content: center;
+    color: var(--highlight-color);
+    font-size: 2rem;
+}
+
+.turn-record{
+    margin-left: 1rem;
+    color: var(--accent-color);
+}
+
+.selection-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.selection-button {
+    background: none;
+    border: none;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.selection-button:hover {
+    transform: scale(1.5);
+}
+
+.results {
+    margin: 4rem;
+    height: 33.33vh;
+    overflow-y: auto;
+    font-size: 175%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.data-your-score, .data-computer-score {
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+    color: var(--accent-color);
+}
+
+.selection {
+    opacity: 0.5;
+}
+
+.selection.winner {
+    opacity: 1;
+    font-size: 2.75rem;
+}
+
+.recent {
+    background-color: var(--highlight-color);
+}
+
+.dashboard {
+    margin: 2rem;
+    height: 26.66vh;
+    background-color: var(--accent-color);
+    border-radius: 2.5vw;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 3fr 2fr;
+}
+
+.instructions {
+    grid-area: 2/1/3/2;
+    color: var(--special-text);
+    align-self: center;
+    margin-left: 2vw;
+}
+
+.exit-button {
+    grid-area: 2/2/3/2;
+    color: var(--special-text);
+    background-color: var(--highlight-color);
+    border-radius: 2.5vw;
+    transition: 150ms;
+    margin-right: 2vw;
+}
+
+.exit-button:hover {
+    transform: scale(1.5);
+}
