@@ -8,6 +8,7 @@ const gameLogic = new GameLogic("rock");
 const randomChoiceSpy = jest.spyOn(gameLogic, "randomChoice");
 const updateScoreSpy = jest.spyOn(gameLogic, "updateScore");
 const addResultDivSpy = jest.spyOn(gameLogic, "addResultDiv");
+const purgeHighlightsSpy = jest.spyOn(gameLogic, "purgeHighlights");
 
 
 
@@ -148,7 +149,7 @@ describe('class GameLogic has methods that execute as intended', () => {
         })
     })
 
-        describe('.addResultDiv method exists and executes as intended', () => {
+    describe('.addResultDiv method exists and executes as intended', () => {
         
         describe('.addResultDiv smoke tests', () => {
 
@@ -175,6 +176,30 @@ describe('class GameLogic has methods that execute as intended', () => {
                     }
                 }
             }
+        })
+    })
+
+    describe('.purgeHighlights method exists and executes as intended', () => {
+        describe('.purgeHighlights smoke tests', () => {
+
+            it('should exist', () => {
+                expect(gameLogic.purgeHighlights).toBeDefined();
+            })
+    
+            it('should be a function type', () => {
+                expect(typeof gameLogic.purgeHighlights).toBe("function");
+            })
+        })
+
+        it('should purge old highlights without errors', () => {
+
+                const result = gameLogic.purgeHighlights();
+
+                expect(result).toBeUndefined;
+                expect(purgeHighlightsSpy).toHaveBeenCalledTimes(1);
+    
+                purgeHighlightsSpy.mockClear();
+
         })
     })
 })

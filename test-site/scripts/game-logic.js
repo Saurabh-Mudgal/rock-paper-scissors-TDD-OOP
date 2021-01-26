@@ -23,6 +23,15 @@ export default class GameLogic {
         // If extending to huge relations (eg pokemon, chess), easily isolate to SQL database and write queries to pull data directly. 
     }
 
+    purgeHighlights() {
+        const oldDivs = document.querySelectorAll(".recent");
+        oldDivs.forEach((oldDiv) => {
+            if (oldDiv){
+                oldDiv.classList.remove("recent")
+            }
+        })
+    }
+
     addResultDiv(selection, winner, playerMode){
         const div = document.createElement("div");
         div.classList.add("selection");
