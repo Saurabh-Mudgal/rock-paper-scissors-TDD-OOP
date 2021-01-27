@@ -1,4 +1,10 @@
 export default class ButtonLogic {
+    // constructor(button) {
+    //     this.button = button;
+    //     this.mode = (this.button.classList[1]);
+    // }
+
+    // ^^The commented code above can be used if button area specific DOM manupliation is required.^^
 
     scrollToTarget() {
         this.scrollToTop();
@@ -37,5 +43,24 @@ export default class ButtonLogic {
 
     scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+}
+
+export class ModeSelector extends ButtonLogic {
+    constructor(modeButton) {
+        super();
+        this.button = modeButton;
+        this.gameModeChoice = this.button.dataset.gamemode;
+    }
+
+    scrollToTarget() {
+        this.refresh();
+        this.scrollToGame();
+    }
+    
+    scrollToGame() {
+        const elem = document.getElementById(this.gameModeChoice);
+        
+        elem.scrollIntoView();
     }
 }
