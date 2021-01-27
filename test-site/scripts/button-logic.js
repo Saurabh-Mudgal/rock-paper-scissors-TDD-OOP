@@ -1,5 +1,10 @@
 export default class ButtonLogic {
 
+    scrollToTarget() {
+        this.scrollToTop();
+        this.refresh();
+    }
+
     refresh() {
         this.clearLog();
         this.defaultText();

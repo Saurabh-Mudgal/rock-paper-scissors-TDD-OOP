@@ -9,6 +9,7 @@ const scrollToTopSpy = jest.spyOn(buttonLogic, "scrollToTop");
 const clearLogSpy = jest.spyOn(buttonLogic, "clearLog");
 const defaultTextSpy = jest.spyOn(buttonLogic, "defaultText");
 const refreshSpy = jest.spyOn(buttonLogic, "refresh");
+const scrollToTargetSpy = jest.spyOn(buttonLogic, "scrollToTarget");
 
 
 
@@ -127,6 +128,35 @@ describe('class ButtonLogic has correct logic for scrolling and resetting', () =
                 clearLogSpy.mockClear();
             })
 
+        })
+
+        describe('.scrollToTarget method exists and executes as intended', () => {
+            
+            describe('.scrollToTarget smoke tests', () => {
+
+                it('should exist', () => {
+                    expect(buttonLogic.scrollToTarget).toBeDefined();
+                })
+        
+                it('should be a function type', () => {
+                    expect(typeof buttonLogic.scrollToTarget).toBe("function");
+                })
+            })
+
+            it('should scroll to the target div as intended without errors', () => {
+                
+                scrollToTopSpy.mockReturnValue("refresh Mock");
+                refreshSpy.mockReturnValue("refresh Mock");
+                        
+                const result = buttonLogic.scrollToTarget();
+
+                expect(result).toBeUndefined;
+                expect(scrollToTargetSpy).toHaveBeenCalledTimes(1);
+            
+                scrollToTargetSpy.mockClear();
+                scrollToTopSpy.mockClear();
+                refreshSpy.mockClear();
+            })
         })
     })
 })
