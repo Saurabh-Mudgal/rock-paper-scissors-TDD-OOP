@@ -23,6 +23,27 @@ export default class GameLogic {
         // If extending to huge relations (eg pokemon, chess), easily isolate to SQL database and write queries to pull data directly. 
     }
 
+    updateInfoBox(winner, draw, playerMode) {
+        const infoBox = (playerMode) ? document.querySelectorAll("#player-inst") : document.querySelectorAll("#comp-inst")
+        let bestPlayer
+        
+        if (draw) {
+            bestPlayer = "It was a draw"
+        } else if(winner && playerMode) {
+            bestPlayer = "You win"
+        } else if(!winner && playerMode) {
+            bestPlayer = "Computer wins"
+        } else if(winner && !playerMode) {
+            bestPlayer = "Player 1 wins"
+        } else if(!winner && !playerMode) {
+            bestPlayer = "Player 2 wins"
+        }
+
+        infoBox.forEach(info => {
+            info.innerText = `${bestPlayer}! Click the emoji to play another round now.`
+        })
+    }
+
     purgeHighlights() {
         const oldDivs = document.querySelectorAll(".recent");
         oldDivs.forEach((oldDiv) => {

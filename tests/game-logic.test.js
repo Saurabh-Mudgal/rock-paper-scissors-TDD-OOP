@@ -9,10 +9,12 @@ const randomChoiceSpy = jest.spyOn(gameLogic, "randomChoice");
 const updateScoreSpy = jest.spyOn(gameLogic, "updateScore");
 const addResultDivSpy = jest.spyOn(gameLogic, "addResultDiv");
 const purgeHighlightsSpy = jest.spyOn(gameLogic, "purgeHighlights");
+const updateInfoBoxSpy = jest.spyOn(gameLogic, "updateInfoBox");
 
 
 
- describe('class GameLogic has correct rock, paper, scissors logic', () => {
+
+describe('class GameLogic has correct rock, paper, scissors logic', () => {
     
     describe('GameLogic smoke tests', () => {
 
@@ -199,6 +201,37 @@ describe('class GameLogic has methods that execute as intended', () => {
                 expect(purgeHighlightsSpy).toHaveBeenCalledTimes(1);
     
                 purgeHighlightsSpy.mockClear();
+
+        })
+    })
+
+    describe('.updateInfoBox method exists and executes as intended', () => {
+        describe('.updateInfoBox smoke tests', () => {
+
+            it('should exist', () => {
+                expect(gameLogic.updateInfoBox).toBeDefined();
+            })
+    
+            it('should be a function type', () => {
+                expect(typeof gameLogic.updateInfoBox).toBe("function");
+            })
+        })
+
+        it('should update the infobox with correct text without errors', () => {
+
+            for (let i = 0; i<2; i++) {
+                for (let j = 0; j<2; j++) {
+                    for (let k = 0; k<2; k++) {
+                        const result = gameLogic.updateInfoBox((i ? true : false), (j ? true : false), (k ? true : false));
+
+                        expect(result).toBeUndefined;
+                        expect(updateInfoBoxSpy).toHaveBeenCalledTimes(1);
+            
+                        updateInfoBoxSpy.mockClear();
+                    }
+                }
+            }
+
 
         })
     })
