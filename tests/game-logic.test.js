@@ -10,6 +10,7 @@ const updateScoreSpy = jest.spyOn(gameLogic, "updateScore");
 const addResultDivSpy = jest.spyOn(gameLogic, "addResultDiv");
 const purgeHighlightsSpy = jest.spyOn(gameLogic, "purgeHighlights");
 const updateInfoBoxSpy = jest.spyOn(gameLogic, "updateInfoBox");
+const runRoundSpy = jest.spyOn(gameLogic, "runRound");
 
 
 
@@ -233,6 +234,46 @@ describe('class GameLogic has methods that execute as intended', () => {
             }
 
 
+        })
+    })
+
+    describe('.runRound method exists and executes as intended', () => {
+        
+        describe('.runRound smoke tests', () => {
+
+            it('should exist', () => {
+                expect(gameLogic.runRound).toBeDefined();
+            })
+    
+            it('should be a function type', () => {
+                expect(typeof gameLogic.runRound).toBe("function");
+            })
+        })
+        
+        it('should run round logic without errors', () => {
+
+            for (let i = 0; i<3; i++) {
+                for (let j = 0; j<3; j++) {
+                    for (let k = 0; k<2; k++) {
+
+                        updateScoreSpy.mockReturnValue("runRound Mock");
+                        purgeHighlightsSpy.mockReturnValue("runRound Mock");
+                        addResultDivSpy.mockReturnValue("runRound Mock");
+                        updateInfoBoxSpy.mockReturnValue("runRound Mock");
+                        
+                        const result = gameLogic.runRound((gameLogic.choices[i]), (gameLogic.choices[j]), (k ? true : false));
+
+                        expect(result).toBeUndefined;
+                        expect(runRoundSpy).toHaveBeenCalledTimes(1);
+            
+                        runRoundSpy.mockClear();
+                        updateScoreSpy.mockClear();
+                        purgeHighlightsSpy.mockClear();
+                        addResultDivSpy.mockClear();
+                        updateInfoBoxSpy.mockClear();
+                    }
+                }
+            }
         })
     })
 })

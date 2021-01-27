@@ -23,6 +23,18 @@ export default class GameLogic {
         // If extending to huge relations (eg pokemon, chess), easily isolate to SQL database and write queries to pull data directly. 
     }
 
+    runRound(player1, player2, playerMode) {
+        let player1Wins = (player1.beats.includes(player2.choice)) ? true : false
+        let player2Wins = (player2.beats.includes(player1.choice)) ? true : false
+        let draw = (!player1Wins && !player2Wins) ? true : false
+
+        this.updateScore(player1Wins, player2Wins, playerMode);
+        this.purgeHighlights();
+        this.addResultDiv(player2, player2Wins, playerMode);
+        this.addResultDiv(player1, player1Wins, playerMode);
+        this.updateInfoBox(player1Wins, draw, playerMode);
+    }
+
     updateInfoBox(winner, draw, playerMode) {
         const infoBox = (playerMode) ? document.querySelectorAll("#player-inst") : document.querySelectorAll("#comp-inst")
         let bestPlayer
