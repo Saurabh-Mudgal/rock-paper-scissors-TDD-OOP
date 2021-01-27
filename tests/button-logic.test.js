@@ -8,8 +8,7 @@ const buttonLogic = new ButtonLogic();
 const scrollToTopSpy = jest.spyOn(buttonLogic, "scrollToTop");
 const clearLogSpy = jest.spyOn(buttonLogic, "clearLog");
 const defaultTextSpy = jest.spyOn(buttonLogic, "defaultText");
-
-
+const refreshSpy = jest.spyOn(buttonLogic, "refresh");
 
 
 
@@ -96,6 +95,36 @@ describe('class ButtonLogic has correct logic for scrolling and resetting', () =
                 expect(defaultTextSpy).toHaveBeenCalledTimes(1);
         
                 defaultTextSpy.mockClear();    
+            })
+
+        })
+
+        describe('.refresh method exists and executes as intended', () => {
+            
+            describe('.refresh smoke tests', () => {
+
+                it('should exist', () => {
+                    expect(buttonLogic.refresh).toBeDefined();
+                })
+        
+                it('should be a function type', () => {
+                    expect(typeof buttonLogic.refresh).toBe("function");
+                })
+            })
+
+            it('should refresh the game UI as intended without errors', () => {
+                
+                clearLogSpy.mockReturnValue("refresh Mock");
+                defaultTextSpy.mockReturnValue("refresh Mock");
+                        
+                const result = buttonLogic.refresh();
+
+                expect(result).toBeUndefined;
+                expect(refreshSpy).toHaveBeenCalledTimes(1);
+            
+                refreshSpy.mockClear();
+                defaultTextSpy.mockClear();
+                clearLogSpy.mockClear();
             })
 
         })
