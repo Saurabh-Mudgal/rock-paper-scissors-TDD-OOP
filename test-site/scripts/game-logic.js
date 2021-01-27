@@ -23,10 +23,18 @@ export default class GameLogic {
         // If extending to huge relations (eg pokemon, chess), easily isolate to SQL database and write queries to pull data directly. 
     }
 
+    computerVsComputer() {
+        let playerMode = false;
+        this.runRound(this.randomChoice(), this.randomChoice(), playerMode);
+    }
+
     playerVsComputer() {
         let playerMode = true;
         this.runRound(this.playerChoice, this.randomChoice(), playerMode);
     }
+    
+    // The code is extensible to Player vs Player as well very easily.
+    // Just add "playerVsPlayer()" function and pass relevant arguments.
 
     runRound(player1, player2, playerMode) {
         let player1Wins = (player1.beats.includes(player2.choice)) ? true : false

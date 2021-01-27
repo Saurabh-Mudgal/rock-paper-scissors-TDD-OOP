@@ -12,7 +12,7 @@ const purgeHighlightsSpy = jest.spyOn(gameLogic, "purgeHighlights");
 const updateInfoBoxSpy = jest.spyOn(gameLogic, "updateInfoBox");
 const runRoundSpy = jest.spyOn(gameLogic, "runRound");
 const playerVsComputerSpy = jest.spyOn(gameLogic, "playerVsComputer");
-
+const computerVsComputerSpy = jest.spyOn(gameLogic, "computerVsComputer");
 
 
 
@@ -94,6 +94,10 @@ describe('class GameLogic has correct rock, paper, scissors logic', () => {
 
     })
 })
+
+// 
+// ------ Game Logic Tests or the MVP tests end here. Following are supplementary tests for class methods ------
+// 
 
 describe('class GameLogic has methods that execute as intended', () => {  
     describe('.randomChoice method exists and executes as intended', () => {
@@ -300,6 +304,31 @@ describe('class GameLogic has methods that execute as intended', () => {
 
             playerVsComputerSpy.mockClear();
             runRoundSpy.mockClear();
+
+        })
+    })
+
+    describe('.computerVsComputer method exists and executes as intended', () => {
+
+        describe('.computerVsComputer smoke tests', () => {
+
+            it('should exist', () => {
+                expect(gameLogic.computerVsComputer).toBeDefined();
+            })
+    
+            it('should be a function type', () => {
+                expect(typeof gameLogic.computerVsComputer).toBe("function");
+            })
+        })
+        
+        it('should execute computer vs computer mode without errors', () => {
+            
+            runRoundSpy.mockReturnValue("computerVsComputer");
+
+            expect(gameLogic.computerVsComputer()).toBeUndefined;
+            expect(computerVsComputerSpy).toHaveBeenCalledTimes(1);
+
+            computerVsComputerSpy.mockClear();
 
         })
     })
