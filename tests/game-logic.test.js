@@ -11,6 +11,7 @@ const addResultDivSpy = jest.spyOn(gameLogic, "addResultDiv");
 const purgeHighlightsSpy = jest.spyOn(gameLogic, "purgeHighlights");
 const updateInfoBoxSpy = jest.spyOn(gameLogic, "updateInfoBox");
 const runRoundSpy = jest.spyOn(gameLogic, "runRound");
+const playerVsComputerSpy = jest.spyOn(gameLogic, "playerVsComputer");
 
 
 
@@ -274,6 +275,32 @@ describe('class GameLogic has methods that execute as intended', () => {
                     }
                 }
             }
+        })
+    })
+
+    describe('.playerVsComputer method exists and executes as intended', () => {
+        
+        describe('.playerVsComputer smoke tests', () => {
+
+            it('should exist', () => {
+                expect(gameLogic.playerVsComputer).toBeDefined();
+            })
+    
+            it('should be a function type', () => {
+                expect(typeof gameLogic.playerVsComputer).toBe("function");
+            })
+        })
+        
+        it('should execute player vs computer mode without errors', () => {
+            
+            runRoundSpy.mockReturnValue("playerVsComputer");
+
+            expect(gameLogic.playerVsComputer()).toBeUndefined;
+            expect(playerVsComputerSpy).toHaveBeenCalledTimes(1);
+
+            playerVsComputerSpy.mockClear();
+            runRoundSpy.mockClear();
+
         })
     })
 })
