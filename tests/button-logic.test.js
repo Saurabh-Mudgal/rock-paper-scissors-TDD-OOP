@@ -1,12 +1,13 @@
 /**
- * @jest-environment jsdom
- */
+* @jest-environment jsdom
+*/
 
- import ButtonLogic from '../test-site/scripts/button-logic.js';
+import ButtonLogic from '../test-site/scripts/button-logic.js';
 
- const buttonLogic = new ButtonLogic();
- const scrollToTopSpy = jest.spyOn(buttonLogic, "scrollToTop");
- const clearLogSpy = jest.spyOn(buttonLogic, "clearLog");
+const buttonLogic = new ButtonLogic();
+const scrollToTopSpy = jest.spyOn(buttonLogic, "scrollToTop");
+const clearLogSpy = jest.spyOn(buttonLogic, "clearLog");
+const defaultTextSpy = jest.spyOn(buttonLogic, "defaultText");
 
 
 
@@ -71,6 +72,30 @@ describe('class ButtonLogic has correct logic for scrolling and resetting', () =
                 expect(clearLogSpy).toHaveBeenCalledTimes(1);
         
                 clearLogSpy.mockClear();    
+            })
+
+        })
+
+        describe('.defaultText method exists and executes as intended', () => {
+
+            describe('.defaultText smoke tests', () => {
+
+                it('should exist', () => {
+                    expect(buttonLogic.defaultText).toBeDefined();
+                })
+        
+                it('should be a function type', () => {
+                    expect(typeof buttonLogic.defaultText).toBe("function");
+                })
+            })
+
+            it('should change default text as intended without errors', () => {
+                const result = buttonLogic.defaultText();
+
+                expect(result).toBeUndefined;
+                expect(defaultTextSpy).toHaveBeenCalledTimes(1);
+        
+                defaultTextSpy.mockClear();    
             })
 
         })
