@@ -1,6 +1,7 @@
 # Rock Paper Scissors - A BDD & OOP approach
 
-<p>This is a static website for playing rock, paper scissors in _Player vs Computer_ and _Computer vs Computer_ mode. The code is designed to be extensible. It is developed using the concepts of Object Oriented Programming and Behavior Driven Development (an extenstion of TDD).</p>
+This is a static website for playing rock, paper scissors in _Player vs Computer_ and _Computer vs Computer_ mode. The code is designed to be extensible. It is developed using the concepts of Object Oriented Programming and Behavior Driven Development (an extenstion of TDD).
+<br>
 
 To see the site code navigate to folder “test-site/” or click [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/tree/main/test-site).<br>
 To see the unit tests for code navigate to folder “tests/” or click [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/tree/main/tests).<br>
