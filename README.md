@@ -33,7 +33,7 @@ Play around and test it yourself: [www.rock-paper-scissors-by-saurabh.netlify.ap
 ## Installation Instructions
 
 ### Requirements
-Libraries and other dependencies (only for testing and testing library dependencies):
+Testing library and its dependencies:
 1) **Jest**: Testing library for JavaScript
 2) **Babel**: Transpiler for ES module to CommonJS module; compatability for Jest
 3) **NPM**: Node package manager for installing and managing dependencies
