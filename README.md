@@ -68,14 +68,14 @@ Info Box | An infobox that provides initial game mode instructions as well as wi
 Player Selections Log | Records and logs in a div (on screen) the selections for every round made by both players.
 Turn Log | Records and updates the number of turns played in the respective game mode.
 Score Log | Records and updates the score for respective players.
-Exit Buttons | (a) _Resets_: Score log, Turn log, Player Selections log and Info Box <br>(b) _Scrolls_: to the top for game mode re-selection.
-Mode Selector Buttons |  (a) _Resets_: Score log, Turn log, Player Selections log and Info Box <br>(b) _Scrolls_: to the selected mode for a new game.
+Exit Buttons | (1) _Resets_: Score log, Turn log, Player Selections log and Info Box <br>(2) _Scrolls_: to the top for game mode re-selection.
+Mode Selector Buttons |  (1) _Resets_: Score log, Turn log, Player Selections log and Info Box <br>(2) _Scrolls_: to the selected mode for a new game.
 
 
 ### Development
 Feature | Description
 | :---: | :---:
-OOP | 
+OOP | The code was designed using concepts of Object Oriented Programming to ensure readability and robustness even as the codebase scales: <br>(1) Encapsulation: Used to ensure all interdependent functions are organised in one place and easily maintainable without breaking the code. Seen in:<br> Abstraction: Used to ensure that files like main.js only access and execute minimal and meaningful methods and are not polluted by private methods. Seen in:<br>Inheritance: To reduce the lines of code written to achieve the MVP and improve readability. Seen in:<br> Polymorphism: To improve the performance and readability of the codebase. Seen in:
 Unit Tests | 
 BDD (extension of TDD) | 
 Extendable Code | 
