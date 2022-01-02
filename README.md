@@ -61,6 +61,16 @@ $ npm run test
 ## Features
 
 ### Production
+Feature | Description
+| :---: | :---:
+Highlight Active | Highlights the latest round selection, including switching to the active game mode.
+Info Box | An infobox that provides initial game mode instructions as well as win/ lose/ draw notification for the round and play again prompt.
+Player Selections Log | Records and logs in a div (on screen) the selections for every round made by both players.
+Turn Log | Records and updates the number of turns played in the respective game mode.
+Score Log | Records and updates the score for respective players.
+Exit Buttons | (a) Resets: Score log, Turn log, Player Selections log and Info Box <br>(b) Scrolls to the top for game mode re-selection.
+Mode Selector Buttons |  (a) Resets: Score log, Turn log, Player Selections log and Info Box <br>(b) Scrolls to the selected mode for a new game.
+
 
 ### Development
 
