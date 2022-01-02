@@ -62,7 +62,7 @@ $ npm run test
 
 ### Production
 Feature | Description
-| :---: | :---
+| :---: | :---:
 Highlight Active | Highlights the latest round selection, including switching to the active game mode.
 Info Box | An infobox that provides initial game mode instructions as well as win/ lose/ draw notification for the round and play again prompt.
 Player Selections Log | Records and logs in a div (on screen) the selections for every round made by both players.
@@ -75,7 +75,7 @@ Mode Selector Buttons |  (1) _Resets_: Score log, Turn log, Player Selections lo
 ### Development
 Feature | Description
 | :---: | :---:
-OOP | The code was designed using concepts of Object Oriented Programming to ensure readability and robustness even as the codebase scales: <br>(1) Encapsulation: Used to ensure all interdependent functions are organised in one place and easily maintainable without breaking the code. Seen in:<br> Abstraction: Used to ensure that files like main.js only access and execute minimal and meaningful methods and are not polluted by private methods. Seen in:<br>Inheritance: To reduce the lines of code written to achieve the MVP and improve readability. Seen in:<br> Polymorphism: To improve the performance and readability of the codebase. Seen in:
+OOP | Designed using concepts of Object Oriented Programming to ensure readability and robustness, even as the codebase scales: <br>(1) Encapsulation: Used to ensure all interdependent functions are organised in one place and easily maintainable without breaking the code. Seen in: **GameLogic**, **ButtonLogic**, **ModeSelector** <br>(2) Abstraction: Used to ensure that files like main.js only access and execute minimal and meaningful methods and are not polluted by private methods. Seen in: **GameLogic**, **ButtonLogic**, **ModeSelector** <br>(3) Inheritance: To reduce the lines of code written to achieve the MVP and improve readability. Seen in: **ModeSelector**<br>(4) Polymorphism: To improve the performance and readability of the codebase. Seen in:  **ModeSelector**
 Unit Tests | 
 BDD (extension of TDD) | 
 Extendable Code | 
