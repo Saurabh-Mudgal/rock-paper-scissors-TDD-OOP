@@ -21,7 +21,6 @@ For a 5-minute code walkthrough video, installation instructions, features and d
 ### Code Walkthrough Video (<7 min)
 [![Demo Video](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-<br>
 ## Installation Instructions
 
 <!-- https://user-images.githubusercontent.com/35081754/147870526-b93f4256-6e0c-46dc-9461-c8927a8066ae.mp4 -->
