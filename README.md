@@ -3,7 +3,7 @@
 This is a static website for playing rock, paper scissors in _Player vs Computer_ and _Computer vs Computer_ mode. The code is designed to be extensible. It is developed using the concepts of Object Oriented Programming and Behavior Driven Development (an extenstion of TDD).
 <br>
 
-To see | Navigation | Link
+TO SEE | NAVIGATION | LINK
 | :---: | :---: | :---:
 Website Code | folder “test-site/” | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/tree/main/test-site)
 Test Suites | folder “tests/” | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/tree/main/tests)
