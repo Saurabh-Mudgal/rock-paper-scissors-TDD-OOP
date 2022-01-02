@@ -1,4 +1,5 @@
 # Rock Paper Scissors - A BDD & OOP approach
+[![npm version](https://img.shields.io/badge/jest-v27.4.0%5E-blue)](https://badge.fury.io/js/jest)
 
 This is a static website for playing rock, paper scissors in _Player vs Computer_ and _Computer vs Computer_ mode. The code is designed to be extensible. It is developed using the concepts of Object Oriented Programming and Behavior Driven Development (an extenstion of TDD).
 <br>
@@ -26,5 +27,8 @@ Play around and test it yourself: [www.rock-paper-scissors-by-saurabh.netlify.ap
 
 ## Installation Instructions
 
-<!-- https://user-images.githubusercontent.com/35081754/147870526-b93f4256-6e0c-46dc-9461-c8927a8066ae.mp4 -->
-<!-- https://user-images.githubusercontent.com/35081754/147870721-d84ea4cb-497e-4908-b25e-4d6a541a581e.jpg -->
+### Dev Dependencies
+Libraries and other dependencies:
+1) **NPM**: Node package manager for installing and managing dependencies
+2) **Jest**: Testing library for JavaScript
+3) **Babel**: Transpiler for ES module to CommonJS module compatability for Jest.
