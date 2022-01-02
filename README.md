@@ -22,7 +22,7 @@ For a 5-minute code walkthrough video, installation instructions, features and d
 - - - -
 
 
-## View Demo
+## VIEW DEMO
 
 ### Live website
 Play around and test it yourself: [www.rock-paper-scissors-by-saurabh.netlify.app/](https://rock-paper-scissors-by-saurabh.netlify.app/)
@@ -30,7 +30,7 @@ Play around and test it yourself: [www.rock-paper-scissors-by-saurabh.netlify.ap
 ### Code Walkthrough Video (<7 min)
 [![Demo Video](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-## Installation Instructions
+## INSTALLATION INSTRUCTIONS
 
 ### Requirements
 Testing library and its dependencies:
@@ -60,7 +60,7 @@ $ npm run test
 
 - - - -
 
-## Features
+## FEATURES
 
 ### Production
 Feature | Description
@@ -84,4 +84,11 @@ Extendable Code | The codebase was modelled using Behavior Driven Development. T
 
 - - - -
 
-# Creator
+## 👤 Author
+
+**Saurabh Mudgal**
+
+* Website: www.saurabhmudgal.com
+* Email: saurabh011@e.ntu.edu.sg
+* Alternate Email: smsaurabhmudgal@gmail.com
+* Location: Singapore
