@@ -1,8 +1,7 @@
 # Rock Paper Scissors - A BDD & OOP approach
 
-This is a static website for playing rock, paper scissors in _Player vs Computer_ and _Computer vs Computer_ mode.<br>
-The code is designed to be extensible developed using the concepts of Object Oriented Programming and Behavior Driven Development (an extenstion of TDD).<br>
-<br>
+<p>This is a static website for playing rock, paper scissors in _Player vs Computer_ and _Computer vs Computer_ mode. The code is designed to be extensible. It is developed using the concepts of Object Oriented Programming and Behavior Driven Development (an extenstion of TDD).</p>
+
 To see the site code navigate to folder “test-site/” or click [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/tree/main/test-site).<br>
 To see the unit tests for code navigate to folder “tests/” or click [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/tree/main/tests).<br>
 You will find the main computational logic in the class GameLogic located in the file game-logic.js. Navigate to “test-site/scripts/game-logic.js” or click [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/test-site/scripts/game-logic.js).<br>
