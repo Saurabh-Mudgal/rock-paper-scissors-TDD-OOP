@@ -1,4 +1,4 @@
-# rock-paper-scissors-TDD-OOP
+# Rock Paper Scissors - A BDD & OOP approach
 
 This is a static website for playing rock, paper scissors in _Player vs Computer_ and _Computer vs Computer_ mode.<br>
 The code is designed to be extensible developed using the concepts of Object Oriented Programming and Behavior Driven Development (an extenstion of TDD).<br>
