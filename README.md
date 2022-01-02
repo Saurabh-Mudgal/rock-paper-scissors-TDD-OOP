@@ -31,11 +31,24 @@ Play around and test it yourself: [www.rock-paper-scissors-by-saurabh.netlify.ap
 
 ## Installation Instructions
 
-### Dev Dependencies
+### Requirements
 Libraries and other dependencies:
 1) **Jest**: Testing library for JavaScript
 2) **Babel**: Transpiler for ES module to CommonJS module; compatability for Jest
 3) **NPM**: Node package manager for installing and managing dependencies
 
-### Setup on your device
+### Installation
+Ensure you have npm installed on your device. If you don't, follow the instructions [here](https://nodejs.org/en/) to install node and npm. Once done, check that everything was installed by running the follwoing in your CLI:
+```git
+node -v
+npm -v
+```
+Proceed to install the dependencies as follows:
+```git
+npm install
+```
+Or, alternatively if that does not work (for eg. due to missing package.json":
+```git
+npm i --save-dev jest @types/jest @babel/plugin-transform-modules-commonjs
+```
 
