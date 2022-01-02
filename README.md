@@ -39,7 +39,7 @@ Libraries and other dependencies:
 3) **NPM**: Node package manager for installing and managing dependencies
 
 ### Installation
-Ensure you have npm installed on your device. If you don't, follow the instructions [here](https://nodejs.org/en/) to install node and npm. Once done, check that everything was installed by running the follwoing in your CLI:
+Ensure you have npm installed on your device. If you don't, follow the instructions [here](https://nodejs.org/en/) to install node and npm. Once done, check that everything was installed by running the following on your CLI:
 ```git
 $ node -v
 $ npm -v
