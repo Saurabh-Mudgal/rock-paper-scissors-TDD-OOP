@@ -1,6 +1,7 @@
 # Rock Paper Scissors - A BDD & OOP approach
 [![jest version](https://img.shields.io/badge/jest-v27.4.0%5E-blue)](https://www.npmjs.com/package/jest)
-[![babel version](https://img.shields.io/badge/%40babel%2Fplugin--transform--modules--commonjs-v7.16.5%5E-goldenrod)](https://www.npmjs.com/package/@babel/plugin-transform-modules-commonjs)
+[![@types/jest version](https://img.shields.io/badge/%40types%2Fjest-v27.4.0%5E-lightgrey)](https://www.npmjs.com/package/jest)
+[![@babel/plugin-transform-modules-commonjs version](https://img.shields.io/badge/%40babel%2Fplugin--transform--modules--commonjs-v7.16.5%5E-goldenrod)](https://www.npmjs.com/package/@babel/plugin-transform-modules-commonjs)
 [![npm version](https://img.shields.io/badge/npm-v6.14.14%5E-emerald)](https://www.npmjs.com/package/npm)
 
 This is a static website for playing rock, paper scissors in _Player vs Computer_ and _Computer vs Computer_ mode. The code is designed to be extensible. It is developed using the concepts of Object Oriented Programming and Behavior Driven Development (an extenstion of TDD).
@@ -40,15 +41,16 @@ Libraries and other dependencies:
 ### Installation
 Ensure you have npm installed on your device. If you don't, follow the instructions [here](https://nodejs.org/en/) to install node and npm. Once done, check that everything was installed by running the follwoing in your CLI:
 ```git
-node -v
-npm -v
+$ node -v
+$ npm -v
 ```
 Proceed to install the dependencies as follows:
 ```git
-npm install
+$ npm install
 ```
-Or, alternatively if that does not work (for eg. due to missing package.json":
+Or, alternatively if missing "package.json" or "package-lock.json":
 ```git
-npm i --save-dev jest @types/jest @babel/plugin-transform-modules-commonjs
+$ npm init -y
+$ npm i --save-dev jest @types/jest @babel/plugin-transform-modules-commonjs
 ```
 
