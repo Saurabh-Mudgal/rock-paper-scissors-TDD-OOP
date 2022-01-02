@@ -81,7 +81,7 @@ describe('class GameLogic has correct rock, paper, scissors logic', () => {
                 expect(paper.playerChoice.beats).toEqual(gameLogic.choices[1].beats)
             })
 
-            it('should have correct logic for rock', () => {
+            it('should have correct logic for scissors', () => {
                 expect(scissors.playerChoice.choice).toMatch("scissors");
                 expect(scissors.playerChoice.emoji).toMatch("✌️");
                 expect(scissors.playerChoice.beats.includes("paper")).toBeTruthy
