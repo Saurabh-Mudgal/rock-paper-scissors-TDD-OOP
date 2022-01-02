@@ -13,7 +13,7 @@ Website Code | folder “test-site/” | [here](https://github.com/Saurabh-Mudga
 Test Suites | folder “tests/” | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/tree/main/tests)
 **Game's Computational Logic** | class GameLogic located in “test-site/scripts/game-logic.js” | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/test-site/scripts/game-logic.js)
 Test Suite for Game Logic | lines 1-96 located in "tests/game-logic.test.js" | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/tests/game-logic.test.js)
-Cosmetic & Functionality Code | class ButtonLogic, ModeSelector located in “test-site/scripts/button-logic.js” | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/test-site/scripts/button-logic.js)
+Site Functionality Code | class ButtonLogic, ModeSelector located in “test-site/scripts/button-logic.js” | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/test-site/scripts/button-logic.js)
 Test Suite for Functionality Code | located in "tests/button-logic.test.js" | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/tests/button-logic.test.js)
 
 <br>
