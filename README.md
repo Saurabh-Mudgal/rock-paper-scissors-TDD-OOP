@@ -62,7 +62,7 @@ $ npm run test
 
 ### Production
 Feature | Description
-| :---: | :---:
+| :---: | :---
 Highlight Active | Highlights the latest round selection, including switching to the active game mode.
 Info Box | An infobox that provides initial game mode instructions as well as win/ lose/ draw notification for the round and play again prompt.
 Player Selections Log | Records and logs in a div (on screen) the selections for every round made by both players.
