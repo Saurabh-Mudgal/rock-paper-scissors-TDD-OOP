@@ -62,7 +62,7 @@ $ npm run test
 
 ### Production
 Feature | Description
-| :---: | :---:
+| :---: | :---
 Highlight Active | Highlights the latest round selection, including switching to the active game mode.
 Info Box | An infobox that provides initial game mode instructions as well as win/ lose/ draw notification for the round and play again prompt.
 Player Selections Log | Records and logs in a div (on screen) the selections for every round made by both players.
@@ -76,6 +76,6 @@ Mode Selector Buttons |  (1) _Resets_: Score log, Turn log, Player Selections lo
 Feature | Description
 | :---: | :---
 OOP | Designed using concepts of Object Oriented Programming to ensure readability and robustness, even as the codebase scales: <br><br>(1) Encapsulation: To organise all interdependent functions in one place. Ensure they are maintainable without breaking the code; seen in: _GameLogic_, _ButtonLogic_, _ModeSelector_ <br>(2) Abstraction: To ensure that files like main.js only access and execute minimal and meaningful methods and are not polluted by private methods; seen in: _GameLogic_, _ButtonLogic, _ModeSelector_ <br>(3) Inheritance: To reduce the lines of code written to achieve the MVP and improve readability; seen in: _ModeSelector_<br>(4) Polymorphism: To improve the performance and readability of the codebase; seen in:  _ModeSelector_
-Unit Tests | Unit tests were written using the Jest library to produce test suites for:<br><br> 1) Main Game logic<br><br> 2) Site and Button Functionality
+Unit Tests | Unit tests were written using the Jest library to produce test suites for:<br><br> 1) Main Game logic<br> 2) Site and Button Functionality
 BDD (extension of TDD) | Test Driven Development was followed to produce high confidence code. Behaviour Driven Development was the design pattern used as an extension to TDD to define the overall behaviour of classes and methods on the collective, bigger scale. Then, iterate TDD to refactor code and achieve that behaviour.
 Extendable Code | The codebase was modelled using Behavior Driven Development. This included thinking ahead and writing extensible code for smoother development work in the future. The code can be easily extended for:<br><br> 1) Rock Paper Scissors Lizard Spock<br> 2) Player vs Player mode
