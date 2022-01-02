@@ -1,5 +1,7 @@
 # Rock Paper Scissors - A BDD & OOP approach
-[![npm version](https://img.shields.io/badge/jest-v27.4.0%5E-blue)](https://badge.fury.io/js/jest)
+[![jest version](https://img.shields.io/badge/jest-v27.4.0%5E-blue)](https://www.npmjs.com/package/jest)
+[![babel version](https://img.shields.io/badge/%40babel%2Fplugin--transform--modules--commonjs-v7.16.5%5E-goldenrod)](https://www.npmjs.com/package/@babel/plugin-transform-modules-commonjs)
+[![npm version](https://img.shields.io/badge/npm-v6.14.14%5E-emerald)](https://www.npmjs.com/package/npm)
 
 This is a static website for playing rock, paper scissors in _Player vs Computer_ and _Computer vs Computer_ mode. The code is designed to be extensible. It is developed using the concepts of Object Oriented Programming and Behavior Driven Development (an extenstion of TDD).
 <br>
