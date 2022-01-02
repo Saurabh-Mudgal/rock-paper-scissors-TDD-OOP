@@ -33,7 +33,7 @@ Play around and test it yourself: [www.rock-paper-scissors-by-saurabh.netlify.ap
 ## Installation Instructions
 
 ### Requirements
-Libraries and other dependencies:
+Libraries and other dependencies (only for testing and testing library dependencies):
 1) **Jest**: Testing library for JavaScript
 2) **Babel**: Transpiler for ES module to CommonJS module; compatability for Jest
 3) **NPM**: Node package manager for installing and managing dependencies
@@ -44,7 +44,7 @@ Ensure you have npm installed on your device. If you don't, follow the instructi
 $ node -v
 $ npm -v
 ```
-Proceed to install the dependencies as follows:
+Download or clone this repository. Navigate to the root folder where you cloned this repository and proceed to install the dependencies as follows:
 ```git
 $ npm install
 ```
@@ -73,4 +73,10 @@ Mode Selector Buttons |  (a) _Resets_: Score log, Turn log, Player Selections lo
 
 
 ### Development
+Feature | Description
+| :---: | :---:
+OOP | 
+Unit Tests | 
+BDD (extension of TDD) | 
+Extendable Code | 
 
