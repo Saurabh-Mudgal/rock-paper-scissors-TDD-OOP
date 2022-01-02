@@ -68,8 +68,8 @@ Info Box | An infobox that provides initial game mode instructions as well as wi
 Player Selections Log | Records and logs in a div (on screen) the selections for every round made by both players.
 Turn Log | Records and updates the number of turns played in the respective game mode.
 Score Log | Records and updates the score for respective players.
-Exit Buttons | (a) Resets: Score log, Turn log, Player Selections log and Info Box <br>(b) Scrolls to the top for game mode re-selection.
-Mode Selector Buttons |  (a) Resets: Score log, Turn log, Player Selections log and Info Box <br>(b) Scrolls to the selected mode for a new game.
+Exit Buttons | (a) _Resets_: Score log, Turn log, Player Selections log and Info Box <br>(b) _Scrolls_: to the top for game mode re-selection.
+Mode Selector Buttons |  (a) _Resets_: Score log, Turn log, Player Selections log and Info Box <br>(b) _Scrolls_: to the selected mode for a new game.
 
 
 ### Development
