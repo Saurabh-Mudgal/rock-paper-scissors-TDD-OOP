@@ -19,7 +19,8 @@ For a 5-minute code walkthrough video, installation instructions, features and d
 [www.rock-paper-scissors-by-saurabh.netlify.app/](https://rock-paper-scissors-by-saurabh.netlify.app/)
 
 ### Code Walkthrough Video (<7 min)
-<a href = "https://user-images.githubusercontent.com/35081754/147870526-b93f4256-6e0c-46dc-9461-c8927a8066ae.mp4" target = "_blank"><img src = "https://user-images.githubusercontent.com/35081754/147870721-d84ea4cb-497e-4908-b25e-4d6a541a581e.jpg" alt = "IMAGE ALT TEXT HERE" width = "240" height = "180" border = "10" /></a>
+<a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target = "_blank"><img src = "https://imgur.com/gallery/1aDQH" alt = "IMAGE ALT TEXT HERE" width = "240" height = "180" border = "10" /></a>
 
 <br>
-![alsyshka-7o-5_7CRqww-unsplash](https://user-images.githubusercontent.com/35081754/147870721-d84ea4cb-497e-4908-b25e-4d6a541a581e.jpg)
+https://user-images.githubusercontent.com/35081754/147870526-b93f4256-6e0c-46dc-9461-c8927a8066ae.mp4
+https://user-images.githubusercontent.com/35081754/147870721-d84ea4cb-497e-4908-b25e-4d6a541a581e.jpg
