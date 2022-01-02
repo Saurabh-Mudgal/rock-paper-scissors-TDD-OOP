@@ -53,12 +53,14 @@ Or, alternatively if missing "package.json" or "package-lock.json":
 $ npm init -y
 $ npm i --save-dev jest @types/jest @babel/plugin-transform-modules-commonjs
 ```
-<br>
 Finally, to run the test suites yourself, navigate to the root directory and run the following CLI command:
 ```git
 $ npm run test
 ```
+
 ## Features
+
 ### Production
+
 ### Development
 
