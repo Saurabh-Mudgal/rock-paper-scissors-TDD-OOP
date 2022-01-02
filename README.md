@@ -58,6 +58,8 @@ Finally, to run the test suites yourself, navigate to the root directory and run
 $ npm run test
 ```
 
+- - - -
+
 ## Features
 
 ### Production
@@ -79,3 +81,7 @@ OOP | Designed using concepts of Object Oriented Programming to ensure readabili
 Unit Tests | Unit tests were written using the Jest library to produce test suites for:<br><br> 1) Main Game logic<br> 2) Site and Button Functionality
 BDD (extension of TDD) | Test Driven Development was followed to produce high confidence code. Behaviour Driven Development was the design pattern used as an extension to TDD to define the overall behaviour of classes and methods on the collective, bigger scale. Then, iterate TDD to refactor code and achieve that behaviour.
 Extendable Code | The codebase was modelled using Behavior Driven Development. This included thinking ahead and writing extensible code for smoother development work in the future. The code can be easily extended for:<br><br> 1) Rock Paper Scissors Lizard Spock<br> 2) Player vs Player mode
+
+- - - -
+
+# Creator
