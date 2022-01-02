@@ -18,6 +18,8 @@ Test Suite for Functionality Code | located in "tests/button-logic.test.js" | [h
 <br>
 For a 5-minute code walkthrough video, installation instructions, features and documentation, read below.
 
+- - - -
+
 
 ## View Demo
 
@@ -31,6 +33,9 @@ Play around and test it yourself: [www.rock-paper-scissors-by-saurabh.netlify.ap
 
 ### Dev Dependencies
 Libraries and other dependencies:
-1) **NPM**: Node package manager for installing and managing dependencies
-2) **Jest**: Testing library for JavaScript
-3) **Babel**: Transpiler for ES module to CommonJS module compatability for Jest.
+1) **Jest**: Testing library for JavaScript
+2) **Babel**: Transpiler for ES module to CommonJS module; compatability for Jest
+3) **NPM**: Node package manager for installing and managing dependencies
+
+### Setup on your device
+
