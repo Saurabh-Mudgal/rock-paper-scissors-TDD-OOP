@@ -28,7 +28,7 @@ selectionButtons.forEach(selectionButton => {
 
 
 
-// Player Vs Computer
+// Computer Vs Computer
 
 const playButtons = document.querySelectorAll("[data-play]");
 
