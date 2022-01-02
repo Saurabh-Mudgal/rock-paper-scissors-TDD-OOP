@@ -19,4 +19,7 @@ For a 5-minute code walkthrough video, installation instructions, features and d
 [www.rock-paper-scissors-by-saurabh.netlify.app/](https://rock-paper-scissors-by-saurabh.netlify.app/)
 
 ### Code Walkthrough Video (<7 min)
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 https://user-images.githubusercontent.com/35081754/147870526-b93f4256-6e0c-46dc-9461-c8927a8066ae.mp4
