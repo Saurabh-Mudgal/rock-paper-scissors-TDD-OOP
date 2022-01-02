@@ -3,12 +3,15 @@
 This is a static website for playing rock, paper scissors in _Player vs Computer_ and _Computer vs Computer_ mode. The code is designed to be extensible. It is developed using the concepts of Object Oriented Programming and Behavior Driven Development (an extenstion of TDD).
 <br>
 
-To see the site code navigate to folder “test-site/” or click [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/tree/main/test-site).<br>
-To see the unit tests for code navigate to folder “tests/” or click [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/tree/main/tests).<br>
-You will find the main computational logic in the class GameLogic located in the file game-logic.js. Navigate to “test-site/scripts/game-logic.js” or click [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/test-site/scripts/game-logic.js).<br>
-The corresponding *test suite for main computational logic* can be found in lines 1-96 of the file game-logic.test.js. Navigate to "tests/game-logic.test.js or click [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/tests/game-logic.test.js).<br>
-Additional cosmetic and site functionality code is located in the ButtonLogic, ModeSelector classes located in button-logic.js. Navigate to “test-site/scripts/button-logic.js” or click [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/test-site/scripts/button-logic.js).
-The corresponding test suite for button functionality is located in button-logic.test.js. Navigate to "tests/button-logic.test.js" or click [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/tests/button-logic.test.js).<br>
+To see | Navigation | Link
+| :---: | :---: | :---:
+Website Code | folder “test-site/” | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/tree/main/test-site)
+Test Suites | folder “tests/” | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/tree/main/tests)
+Games computational Logic | class GameLogic located in “test-site/scripts/game-logic.js” | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/test-site/scripts/game-logic.js)
+Test Suite for Game Logic | lines 1-96 located in "tests/game-logic.test.js" | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/tests/game-logic.test.js)
+Cosmetic & Functionality Code | class ButtonLogic, ModeSelector located in “test-site/scripts/button-logic.js” | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/test-site/scripts/button-logic.js)
+Test Suite for Button Functionality | "tests/button-logic.test.js" | [here](https://github.com/Saurabh-Mudgal/rock-paper-scissors-TDD-OOP/blob/main/tests/button-logic.test.js)
+
 <br>
 For a 5-minute code walkthrough video, installation instructions, features and documentation, read below.
 
