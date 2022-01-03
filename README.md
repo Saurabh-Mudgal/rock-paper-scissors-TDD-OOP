@@ -29,6 +29,7 @@ Play around and test it yourself: [www.rock-paper-scissors-by-saurabh.netlify.ap
 
 ### Code Walkthrough Video
 [![Demo Video](https://img.youtube.com/vi/Y3ohHYALsp4/0.jpg)](https://youtu.be/Y3ohHYALsp4)
+Click on the image above or go to: https://youtu.be/Y3ohHYALsp4
 
 ## 🖥️ INSTALLATION INSTRUCTIONS
 
