@@ -27,7 +27,7 @@ For a 5-minute code walkthrough video, installation instructions, features and d
 ### Live website
 Play around and test it yourself: [www.rock-paper-scissors-by-saurabh.netlify.app/](https://rock-paper-scissors-by-saurabh.netlify.app/)
 
-### Code Walkthrough Video
+### Video Walkthrough
 [![Demo Video](https://img.youtube.com/vi/Y3ohHYALsp4/0.jpg)](https://youtu.be/Y3ohHYALsp4)
 <br>
 Click on the image above or go to: https://youtu.be/Y3ohHYALsp4
